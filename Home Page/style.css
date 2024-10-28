@@ -10,7 +10,7 @@ body{
   background: #111113;
   background-image: radial-gradient(
     circle at top left,
-    #3dc5ff 10%,
+    #ff6d3d 10%,
     #000000 30%
   );
 }
@@ -50,6 +50,7 @@ header div{
 #textInfo{
 	color: white;
 	font-family: arial;
+	font-size: 20px;
 	width: 25%;
 	float: left;
 	line-height: 3em;
@@ -103,7 +104,7 @@ header div{
 /*ENF OF HEADER********************************/
 
 #games{
-	width: 1120em;
+	width: 120em;
 	position: absolute;
 	top: .5em;
 	left: 0;
@@ -276,7 +277,7 @@ header div{
   position: absolute;
   top: 3%;
   left: 10%;
-  background: #0af;
+  background: rgb(255, 183, 0);
   width: 1500px;
   height: 1300px;
   margin-left: -150px;
@@ -289,7 +290,7 @@ header div{
 .wave.-three {
   animation: drift 7500ms infinite linear;
 	position: fixed;
-	background-color: #77daff;
+	background-color: #f07e13;
 }
 
 .wave.-two {
@@ -337,8 +338,8 @@ header div{
   -ms-flex-align: center;
   align-items: center;
 
-  background: #25a7d7;
-  background: -webkit-linear-gradient(#25a7d7, #2962FF);
+  background: #5a25d7;
+  background: -webkit-linear-gradient(#d725c5, #2962FF);
   background: linear-gradient(#25a7d7, #25a7d7);
 }
 
