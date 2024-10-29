@@ -16,25 +16,25 @@ $(document).ready(function(){
 
 	function handleMouse(e) {
 	  // Verify that x and y already have some value
-	  if (x && y) {
-		// Scroll window by difference between current and previous positions
-		window.scrollBy(e.clientX - x, e.clientY - y);
-	  }
+	//   if (x && y) {
+	// 	// Scroll window by difference between current and previous positions
+	// 	window.scrollBy(e.clientX - x, y);
+	//   }
 
-	  // Store current position
-	  x = e.clientX;
-	  y = e.clientY;
+	//   // Store current position
+	//   x = e.clientX;
+	//   y = e.clientY;
 	}
 
 	// Assign handleMouse to mouse movement events
 	document.onmousemove = handleMouse;
 
 	 $(window).scroll(function(){
-		if ($(this).scrollTop() > 10) {
-			//$('header').css("background-color","rgba(240, 126, 19,.8)");
-		} else {
-			$('header').css("background-color","rgba(255,255,255,0)");
-		}
+		// if ($(this).scrollTop() > 10) {
+		// 	//$('header').css("background-color","rgba(240, 126, 19,.8)");
+		// } else {
+		// 	$('header').css("background-color","rgba(255,255,255,0)");
+		// }
 	});
 });
 
