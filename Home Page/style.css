@@ -7,9 +7,12 @@ body{
   	justify-content: center;
   	height: 100vh;
   	overflow: hidden;
-  	overflow-x:hidden;
-	overflow-y:hidden;
   	background: #111113;
+  	background-image: radial-gradient(
+    	circle at top left,
+    	#ff6d3d 10%,
+    	#000000 30%
+  	);
 }
 
 .particles {

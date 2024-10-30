@@ -15,26 +15,14 @@ $(document).ready(function(){
 	var x, y;
 
 	function handleMouse(e) {
-	  // Verify that x and y already have some value
-	//   if (x && y) {
-	// 	// Scroll window by difference between current and previous positions
-	// 	window.scrollBy(e.clientX - x, y);
-	//   }
-
-	//   // Store current position
-	//   x = e.clientX;
-	//   y = e.clientY;
+	
 	}
 
 	// Assign handleMouse to mouse movement events
 	document.onmousemove = handleMouse;
 
 	 $(window).scroll(function(){
-		// if ($(this).scrollTop() > 10) {
-		// 	//$('header').css("background-color","rgba(240, 126, 19,.8)");
-		// } else {
-		// 	$('header').css("background-color","rgba(255,255,255,0)");
-		// }
+		
 	});
 });
 
@@ -116,7 +104,7 @@ function init() {
 		[4,3,2,1]
 	  ];
 
-  triangle.src = link + order[randomNum][0] + ".png";
+  //triangle.src = link + order[randomNum][0] + ".png";
   circle.src = link + order[randomNum][1] + ".png";
   cross.src = link + order[randomNum][2] + ".png";
   box.src = link + order[randomNum][3] + ".png";
