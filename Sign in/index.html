@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>sign in</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-	<link rel="=stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<title>sign in</title>
 </head>
 <body>
 	<h1>Hello, world!</h1>
@@ -15,12 +15,42 @@
 				<h1>Create Account</h1>
 				<div class="social-icons">
 					<a href="#" class="icon">
-						<i class="fa-brands fa-google"></i>
-						<i class="fa-brands fa-linkedin"></i>
-					</a>
+						<i class="fa-brands fa-google"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
 				</div>
-				
+				<span>Or use your email for regetstration</span>
+				<input type="text" placeholder="Name">
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<button>Sign Up</button>
 			</form>
+		</div>
+		<div class="form-container sign in">
+			<form>
+				<h1>Sign in</h1>
+				<div class="social-icons">
+					<a href="#" class="icon">
+						<i class="fa-brands fa-google"></i></a>
+					<a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<span>Or use your email for sign in</span>
+				<input type="email" placeholder="Email">
+				<input type="password" placeholder="Password">
+				<a href="#">Forget your password</a>
+				<button>Sign In</button>
+			</form>
+		</div>
+		<div class="toggel-container">
+			<div class="toggel-panel toggel-left">
+				<h1>Welcome Back!</h1>
+				<p>Enter your personal Details to get all sit'features</p>
+				<button class="hidden" id="login">Sign In</button>
+			</div>
+			<div class="toggel-panel toggel-left">
+				<h1>Hello Friend!</h1>
+				<p>Regester your personal Details to get all sit'features</p>
+				<button class="hidden" id="regester">Sign Up</button>
+			</div>
 		</div>
 	</div>
 	<script src="app.js"></script>
