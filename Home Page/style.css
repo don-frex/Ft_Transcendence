@@ -72,6 +72,7 @@ header div{
 	background-repeat: no-repeat;
 	background-position: center;
 	float: left;
+	width: 25%;
 }
 
 #user{
@@ -87,8 +88,8 @@ header div{
 #userName{
 	color: white;
 	font-family: arial;
-	width: 25%;
-	float: left;
+	width: 10%;
+	float: right;
 	line-height: 3em;
 }
 
