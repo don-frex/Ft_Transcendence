@@ -62,7 +62,7 @@ header div{
 	font-weight: bold;
 	width: 25%;
 	float: left;
-	line-height: 3em;
+	line-height: 1em;
 }
 
 #friends{
@@ -90,7 +90,7 @@ header div{
 	font-family: arial;
 	width: 10%;
 	float: right;
-	line-height: 3em;
+	line-height: 1em;
 }
 
 #trophies{
