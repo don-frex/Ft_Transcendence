@@ -25,6 +25,12 @@ body{
 	/* margin-bottom: -50px; */
 }
 
+.user-pic{
+	width: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 30px;
+}
 
 
 .particles {
@@ -84,6 +90,7 @@ h3{
 nav{
 	/* background: #1a1a1a; */
 	width: 98%;
+	margin-top: -15px;
 	/* padding: -20px 10%; */
 	display: flex;
 	align-items: center;
@@ -141,13 +148,20 @@ nav{
 
 .sub-menu-wrap{
 	position: absolute;
-	top: 53%;
+	top: 60%;
 	right: -1%;
 	width: 320px;
-	/* height: 300px; */
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+	max-height: 400px;
 }
 
 .sub-menu{
+	--theme-bg-color: rgba(16 18 27 / 40%);
 	background: #fff;
 	padding: 20px;
 	margin: 15px;
