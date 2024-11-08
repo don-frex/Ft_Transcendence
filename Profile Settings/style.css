@@ -38,7 +38,7 @@ body{
   	max-width: 100%;
   	min-height: 680px;
 	margin: 100px;
-	margin-left: 300px;
+	margin-left: 500px;
 }
 
 .container h1{
@@ -70,8 +70,9 @@ body{
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 10px 40px;
+	padding: 30px 40px;
 	height: 100%;
+	margin-top: -410px;
 }
 
 .container input {
@@ -145,13 +146,15 @@ body{
   /* Upload Image */
 
   .card{
-	width: 400px;
-	background-color: #eee;
-	padding: 40px;
+	width: 328px;
+	height: 370px;
+	background-color: #fff;
+	padding: 24px;
 	border-radius: 15px;
 	text-align: center;
 	color: #333;
-  }
+	margin-left: 500px;
+}
 
 .card h2{
 	font-weight: 500;
@@ -159,20 +162,20 @@ body{
 }
 
 .card img{
-	width: 180px;
-	height: 180px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 label{
 	display: block;
 	width: 200px;
 	background: #ff6d3d;
-	color: #eee;
+	color: #fff;
 	padding: 12px;
-	margin: 10px auto;
+	margin: 0px auto;
 	border-radius: 5px;
 	cursor: pointer;
 }
