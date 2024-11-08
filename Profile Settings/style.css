@@ -141,3 +141,42 @@ body{
 	font-weight: 700;
 	cursor: pointer;
   }
+
+  /* Upload Image */
+
+  .card{
+	width: 400px;
+	background-color: #eee;
+	padding: 40px;
+	border-radius: 15px;
+	text-align: center;
+	color: #333;
+  }
+
+.card h2{
+	font-weight: 500;
+	color: #000;
+}
+
+.card img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+label{
+	display: block;
+	width: 200px;
+	background: #ff6d3d;
+	color: #eee;
+	padding: 12px;
+	margin: 10px auto;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.card input{
+	display: none;
+}
