@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App with Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Friend List Slide -->
+    <div class="slide" id="friend-list">
+      <h2>Friends</h2>
+      <ul id="friends">
+        <!-- Dynamically populated -->
+      </ul>
+    </div>
+
+    <!-- Chat Interface Slide -->
+    <div class="slide" id="chat">
+      <div class="chat-window" id="chat-window"></div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type a message...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <!-- Contact Details Slide -->
+    <div class="slide" id="contact-details">
+      <h2>Contact Info</h2>
+      <div id="contact-info">
+        <p>Select a contact to see details.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="particles-js" class="particles"></div>
+	<script src="../particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
