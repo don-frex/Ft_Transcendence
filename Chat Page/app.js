@@ -98,9 +98,27 @@ const friends = [
 	contactImage.src = friend.imageURL || 'default-image.png'; // Default image fallback
   	//contactImage.alt = `${friend.name}'s image`;
 	contactInfo.innerHTML = `
-	  	<p><strong>Name:</strong> ${friend.name}</p>
-	  	<p><strong>Email:</strong> ${friend.email}</p>
-	  	<p><strong>Phone:</strong> ${friend.phone}</p>
+		<h1>${friend.name}</h1>
+	  	<nav class="user-panel" aria-label="User actions">
+    <button class="panel-option" aria-label="View profile">
+        <span class="option-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5d00984856a6e4e4fc6cacf6193655e1fe96696ed9d79af881455ff7a035b029?placeholderIfAbsent=true&apiKey=7c996a33a93047e99bde1636afc980c5" alt="" />
+        </span>
+        <span class="option-text">View profile</span>
+    </button>
+    <button class="panel-option" aria-label="Invite to a game">
+        <span class="option-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a41e797efdf453abaa5586bc6a1db7a39ad686263f2df371265880e84f2029a?placeholderIfAbsent=true&apiKey=7c996a33a93047e99bde1636afc980c5" alt="" />
+        </span>
+        <span class="option-text">Invite to a game</span>
+    </button>
+    <button class="panel-option" aria-label="Block">
+        <span class="option-icon">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/976c928a190bea484b5a13d5b8e41707fe5d79bd9df7850506d056ab16e95aa7?placeholderIfAbsent=true&apiKey=7c996a33a93047e99bde1636afc980c5" alt="" />
+        </span>
+        <span class="option-text">Block</span>
+    </button>
+</nav>
 	`;
   }
   
