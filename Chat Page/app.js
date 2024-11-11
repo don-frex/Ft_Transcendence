@@ -57,9 +57,9 @@ particlesJS("particles-js", {
   
 // Dummy Data
 const friends = [
-	{ id: 1, name: 'Alice', email: 'alice@example.com', phone: '123-456-7890' },
-	{ id: 2, name: 'Bob', email: 'bob@example.com', phone: '987-654-3210' },
-	{ id: 3, name: 'Charlie', email: 'charlie@example.com', phone: '555-666-7777' },
+	{ id: 1, name: 'Don-frex', email: 'Don-frex@example.com', phone: '123-456-7890', imageURL: 'https://avatars.githubusercontent.com/u/70679159' },
+	{ id: 2, name: 'Yassine', email: 'Yassine@example.com', phone: '987-654-3210', imageURL: 'https://cdn.intra.42.fr/users/1762786def18acd298d27100e94b6f66/ymaaloum.jpg'},
+	{ id: 3, name: 'Yassir', email: 'Yassir@example.com', phone: '555-666-7777', imageURL: 'https://cdn.intra.42.fr/users/cf987edde4ffa352bdff70950565e929/ylaaross.jpg' },
   ];
   
   let selectedFriend = null;
@@ -76,18 +76,21 @@ const friends = [
   
   // Select a Friend
   function selectFriend(friend) {
-	selectedFriend = friend;
-  
+	  selectedFriend = friend;
+	  const contactImage = document.getElementById('contact-image');
+	
 	// Show chat window messages
 	const chatWindow = document.getElementById('chat-window');
 	chatWindow.innerHTML = `<div class="message received">Hello, this is ${friend.name}!</div>`;
-  
+	
 	// Show contact details
 	const contactInfo = document.getElementById('contact-info');
+	contactImage.src = friend.imageURL || 'default-image.png'; // Default image fallback
+  	//contactImage.alt = `${friend.name}'s image`;
 	contactInfo.innerHTML = `
-	  <p><strong>Name:</strong> ${friend.name}</p>
-	  <p><strong>Email:</strong> ${friend.email}</p>
-	  <p><strong>Phone:</strong> ${friend.phone}</p>
+	  	<p><strong>Name:</strong> ${friend.name}</p>
+	  	<p><strong>Email:</strong> ${friend.email}</p>
+	  	<p><strong>Phone:</strong> ${friend.phone}</p>
 	`;
   }
   
@@ -117,7 +120,7 @@ const friends = [
 	  setTimeout(() => {
 		const replyElement = document.createElement('div');
 		replyElement.classList.add('message', 'received');
-		replyElement.textContent = `Hi, I'm ${selectedFriend.name}!`;
+		replyElement.textContent = `message resived ${selectedFriend.name}!`;
 		chatWindow.appendChild(replyElement);
 		chatWindow.scrollTop = chatWindow.scrollHeight;
 	  }, 1000);

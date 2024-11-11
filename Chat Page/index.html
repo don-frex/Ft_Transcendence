@@ -10,7 +10,16 @@
   <div class="container">
     <!-- Friend List Slide -->
     <div class="slide" id="friend-list">
-      <h2>Friends</h2>
+		<h2>Friends</h2>
+		<!-- search bar -->
+		<div class="wrap">
+			<div class="search">
+			   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+			   <button type="submit" class="searchButton">search
+				 <i class="fa fa-search"></i>
+			  </button>
+			</div>
+		</div>
       <ul id="friends">
         <!-- Dynamically populated -->
       </ul>
@@ -25,8 +34,9 @@
       </div>
     </div>
 
-    <!-- Contact Details Slide -->
+    <!-- Cotnact Details Slide -->
     <div class="slide" id="contact-details">
+	<img id="contact-image" src="" alt="Contact Image" style="width: 100px; height: 100px; border-radius: 50%;">
       <h2>Contact Info</h2>
       <div id="contact-info">
         <p>Select a contact to see details.</p>
