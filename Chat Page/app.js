@@ -68,8 +68,18 @@ const friends = [
   const friendsList = document.getElementById('friends');
   friends.forEach(friend => {
 	const li = document.createElement('li');
-	li.textContent = friend.name;
 	li.dataset.id = friend.id;
+	const avatar = document.createElement('div');
+	avatar.classList.add('avatarContainer');
+	const img = document.createElement('img');
+	img.src =  friend.imageURL;
+	img.classList.add('avatar');
+	img.setAttribute("alt", friend.name);
+	avatar.appendChild(img);
+	li.appendChild(avatar);
+	// li.textContent = friend.name;
+	li.append(friend.name)	
+	// li.addEventListener('click', () => selectFriend(friend));
 	li.addEventListener('click', () => selectFriend(friend));
 	friendsList.appendChild(li);
   });
