@@ -11,6 +11,7 @@ body{
 	/* display: flex; */
 	/* align-items: center; */
 	height: 100vh;
+	
   	overflow: hidden;
 	background: #111113;
   	background-image: radial-gradient(
@@ -29,6 +30,8 @@ body{
 }
 
 .container{
+	align-items: center; /* Center horizontally */
+	justify-content: center; /* Center vertically */
 	background-color: #ff6d3d;
   	border-radius: 30px;
   	box-shadow: 0 5px 15px rgba(0, 0, 0, 35);
@@ -38,7 +41,7 @@ body{
   	max-width: 100%;
   	min-height: 680px;
 	margin: 100px;
-	margin-left: 500px;
+	/* margin-left: 500px; */
 }
 
 .container h1{
