@@ -119,10 +119,8 @@ body {
 
   #friends li{
 	display: flex;
-	/* justify-content: ; */
 	gap: 10px;
 	align-items: center;
-	/* flex-direction: row-reverse	; */
   }
   .avatarContainer{
 	width: 40px;
@@ -130,9 +128,6 @@ body {
 	border: 1px solid #ff6d3d;
 	border-radius: 50%;
 	overflow: hidden;
-	/* display: flex; */
-	/* justify-content: center; */
-	/* align-items: center; */
   }
 
   .avatar{ /*img*/
