@@ -111,10 +111,21 @@ h1 {
 .container h3 {
     color: #ffffff;
     background-color: #ff6d3d;
-    width: 100px;
+    width: 120px;
 	opacity: 80%;
 	border-radius: 5px;
     font-size: 100%;
     display: flex;
-    margin: 50px;
+    margin: 10px;
+	margin-top: 5%;
+}
+
+.container h5 {
+    color: #ffffff;
+    background-color: #6f6f6f;
+    width: 100px;
+	opacity: 80%;
+    font-size: 90%;
+    display: flex;
+    margin-left: 50px;
 }
