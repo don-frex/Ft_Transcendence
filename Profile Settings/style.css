@@ -7,12 +7,26 @@
 }
 
 body {
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
+	justify-content: center;
     height: 100vh;
+	margin: 0;
+	padding-top: 60px;
     overflow: hidden;
     background: #111113;
     background-image: radial-gradient( circle at top left, #ff6d3d 10%, #000000 30%);
+}
+
+nav {
+    position: fixed; /* Keeps it at the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%; /* Stretches across the page */
+    /*background-color: #111113;  Add background to make it visible */
+    z-index: 1000; /* Ensures it stays above other elements */
+    padding: 10px 20px; /* Adjust padding for spacing */
+    /*box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Optional: adds a subtle shadow */
 }
 
 .particles {
@@ -35,7 +49,7 @@ body {
     width: 868px;
     max-width: 100%;
     min-height: 680px;
-    margin: 100px;
+    margin: 0;
     /* margin-left: 500px; */
 }
 

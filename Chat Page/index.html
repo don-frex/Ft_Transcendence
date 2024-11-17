@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App with Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Friend List Slide -->
+    <div class="slide" id="friend-list">
+		<h2>Friends</h2>
+		<!-- search bar -->
+		<div class="wrap">
+			<div class="search">
+			   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+			   <button type="submit" class="searchButton">search
+				 <i class="fa fa-search"></i>
+			  </button>
+			</div>
+		</div>
+      <ul id="friends">
+        <!-- Dynamically populated -->
+      </ul>
+    </div>
+
+    <!-- Chat Interface Slide -->
+    <div class="slide" id="chat">
+      <div class="chat-window" id="chat-window"></div>
+      <div class="chat-input">
+        <input type="text" id="message-input" placeholder="Type a message...">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <!-- Cotnact Details Slide -->
+    <div class="slide" id="contact-details">
+	<img id="contact-image" src="" alt="Contact Image" style="width: 100px; height: 100px; border-radius: 50%;">
+      <div id="contact-info">
+        <p>Select a contact to see details.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="particles-js" class="particles"></div>
+	<script src="../Profile Settings/particles.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
