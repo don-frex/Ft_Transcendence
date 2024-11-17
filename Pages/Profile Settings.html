@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile Settings</title>
+	<link rel="stylesheet" href="../Home Page/style.css"/>
+	<link rel="stylesheet" href="../Profile Settings/style.css"/>
+</head>
+<body>
+	<div class="body-form">
+		<nav>
+			<img class="logo" src="../images/TR-logo.png">
+				<img src="https://cdn.intra.42.fr/users/6346b9909265439cf973f7d7ecb87989/asaber.jpg" class="user-pic" onclick="toggleMenu()">
+			<div class="sub-menu-wrap" id="subMenu">
+					<div class="sub-menu">
+						<div class="user-info">
+							<img src="https://cdn.intra.42.fr/users/6346b9909265439cf973f7d7ecb87989/asaber.jpg">
+							<h2>Adnane Saber</h2>
+						</div>
+						<hr>
+						<a href="#" class="sub-menu-link">
+							<img src="../images/user-icon.png">
+							<p> Profile</p>
+							<span>></span>
+						</a>
+						<a href="../Profile Settings/index.html" class="sub-menu-link">
+							<img src="../images/setting-icon.png">
+							<p> Settings</p>
+							<span>></span>
+						</a>
+						<a href="../Sign in/index.html" class="sub-menu-link">
+							<img src="../images/og-out-icon.png">
+							<p> Log out</p>
+							<span>></span>
+						</a>
+					</div>
+				</div>
+			</nav>
+	</div>
+	<div class="container">
+		<div class="form-container sign-up">
+			<h1>Profile Settings</h1>
+			<div class="card">
+				<h2>Adnane Saber</h2>
+				<p>@DON-FREX</p>
+				<img src="../images/profile.png" id="profile-pic">
+				<label for="input-file">update image</label>
+				<input type="file" accept="image/jpeg, image/jpg, image/png" id="input-file">
+			</div>
+		<form>
+			<input type="text" placeholder="first name">
+			<input type="text" placeholder="last name">
+			<input type="text" placeholder="Username">
+			<input type="email" placeholder="Email">
+			<input type="password" placeholder="Password">
+			<input type="password" placeholder="Rewrite Password">
+			<label class="checkbox" for="checkbox1">
+				<span class="label">two factor authentication</span>
+				<input checked="" id="checkbox1" type="checkbox">
+				<span class="checkmark"></span>
+			</label>
+		</form>
+		</div>
+	</div>
+	<div id="particles-js" class="particles"></div>
+	<script src="../particles.js"></script>
+	<script src="../Profile Settings/app.js"></script>
+</body>
+</html>
