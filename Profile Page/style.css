@@ -7,14 +7,14 @@
 }
 
 :root{
-    --color-primary: #6C9BCF;
+    --color-primary: #cf8d6c;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
     --color-warning: #F7D060;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
+    --color-light: rgba(239, 90, 10, 0.18);
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
@@ -29,15 +29,22 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+	/* display: flex; */
+    position: relative;
     align-items: center;
-    justify-content: center;
+	justify-content: center;
     height: 100vh;
+	width: 100%;
+	min-height: 100vh;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     background: #111113;
     background-image: radial-gradient( circle at top left, #ff6d3d 10%, #000000 30%);
+}
+
+.body-form{
+	display: flex;
+	flex-direction: column;
 }
 
 .particles {
@@ -51,7 +58,7 @@ body {
 .container {
     /* display: contents; */
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 35);
@@ -60,7 +67,8 @@ body {
     width: 90%;
     max-width: 100%;
     min-height: 80%;
-    margin: 25%;
+    /* margin: 25%; */
+
     /* margin-left: 500px; */
 }
 
@@ -69,8 +77,8 @@ body {
     margin: 5px auto;
     width: 90%;
     height: 30%;
-    border-radius: 15px;
-    /* margin-top: 25px; */
+    /* border-radius: 15px; */
+    margin-top: 200px;
     background-color: #ffffff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -82,23 +90,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: none%;
-    /* Ensures no resizing */
+    max-width: none;
     max-height: none;
-    /* Ensures no resizing */
     width: auto;
-    /* Keeps original width */
     height: auto;
-    /* Keeps original height */
 }
 
 .profile-img {
     display: block;
     margin: 5px auto;
-    width: 10%;
-    height: 10%;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin-top: -10%;
     z-index: 2;
     position: relative;
 }
@@ -218,4 +221,65 @@ h1 {
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+/* User details */
+
+.user-details {
+    text-align: left;
+    margin-top: 20px;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.user-details h5 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--color-dark-variant);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.info-item span:first-child {
+    font-weight: 600;
+}
+
+.edit-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-success);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius-1);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Ensures the button width adjusts to the text */
+    text-align: center; /* Aligns the text properly inside */
+    margin: 0 auto; /* Centers the button */
+}
+
+.edit-button:hover {
+    background-color: darkgreen;
 }
