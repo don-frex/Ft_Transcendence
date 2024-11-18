@@ -10,11 +10,11 @@
     --color-primary: #cf8d6c;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
-    --color-warning: #F7D060;
+    --color-warning: #f7d060;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-dark: #363949;
-    --color-light: rgba(239, 90, 10, 0.18);
+    --color-light: rgba(56, 55, 55, 0.18);
     --color-dark-variant: #677483;
     --color-background: #f6f6f9;
 
@@ -25,7 +25,7 @@
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0 .1875rem 0.75rem 0rem var(--color-light);
 }
 
 body {
@@ -161,7 +161,7 @@ h1 {
 }
 
 .analyse > div:hover{
-    box-shadow: none;
+    --box-shadow: 0 .4875rem 1.95rem 0rem var(--color-light);
 }
 
 .analyse > div .status{
@@ -267,7 +267,7 @@ h1 {
 .edit-button {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background-color: var(--color-success);
+    background-color: #000000;
     color: var(--color-white);
     border: none;
     border-radius: var(--border-radius-1);
@@ -280,6 +280,6 @@ h1 {
     margin: 0 auto; /* Centers the button */
 }
 
-.edit-button:hover {
-    background-color: darkgreen;
-}
+/* .edit-button:hover {
+    background-color: rgb(253, 7, 7);
+} */
