@@ -466,6 +466,7 @@ nav{
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  opacity: 0%;
 
   background: #5a25d7;
   background: -webkit-linear-gradient(#d725c5, #2962FF);
