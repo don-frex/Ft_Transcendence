@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Transcendence</title>
@@ -8,13 +7,42 @@
 	<link rel="stylesheet" type="text/css"
 		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="../Home Page/style.css">
+	<link rel="stylesheet" href="../Css/style.css">
 </head>
 
 <body>
-	
-		<nav-bar></nav-bar>	
-	
+	<div class="body-form">
+		<nav>
+			<a href="Home Page.html">
+				<img class="logo" src="../images/TR-logo.png">
+			</a>
+				<img src="https://cdn.intra.42.fr/users/6346b9909265439cf973f7d7ecb87989/asaber.jpg" class="user-pic" onclick="toggleMenu()">
+			<div class="sub-menu-wrap" id="subMenu">
+					<div class="sub-menu">
+						<div class="user-info">
+							<img src="https://cdn.intra.42.fr/users/6346b9909265439cf973f7d7ecb87989/asaber.jpg">
+							<h2>Adnane Saber</h2>
+						</div>
+						<hr>
+						<a href="Profile Page.html" class="sub-menu-link">
+							<img src="../images/user-icon.png">
+							<p> Profile</p>
+							<span>></span>
+						</a>
+						<a href="Profile Settings.html" class="sub-menu-link">
+							<img src="../images/setting-icon.png">
+							<p> Settings</p>
+							<span>></span>
+						</a>
+						<a href="../index.html" class="sub-menu-link">
+							<img src="../images/og-out-icon.png">
+							<p> Log out</p>
+							<span>></span>
+						</a>
+					</div>
+				</div>
+			</nav>
+	</div>
 		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -62,14 +90,12 @@
 				<span class="gameTitle">Team Buildling</span>
 			</div>
 		</div>
-
-		<div class='box'>
-			<div class='wave -one'></div>
-			<div class='wave -two'></div>
-			<div class='wave -three'></div>
-		</div>
-		<script src="../Components/nav-bar.js"></script>
+	<div class='box'>
+		<div class='wave -one'></div>
+		<div class='wave -two'></div>
+		<div class='wave -three'></div>
+	</div>
 		<script src="../Home Page/app.js"></script>
 		<script src="../particles-config.js"></script>
-	</div>
+		<script src="../Js/subMenu.js"></script>
 </body>

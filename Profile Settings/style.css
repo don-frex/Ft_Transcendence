@@ -1,25 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
-body {
-	position: relative;
-    align-items: center;
-	justify-content: center;
-    height: 100vh;
-	width: 100%;
-	min-height: 100vh;
-    overflow: hidden;
-    background: #111113;
-    background-image: radial-gradient(
-		circle at top left, 
-		#ff6d3d 10%,
-		#000000 30%);
-}
 
 .body-form{
 	display: flex;
@@ -45,7 +23,7 @@ nav {
     z-index: -1;
 }
 
-.container {
+.Psetting_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +41,7 @@ nav {
 	transform: translate(-50%, -50%);
 }
 
-.container h1 {
+.Psetting_container h1 {
     /* font: mo; */
     display: flex;
     font-size: 44px;
@@ -74,7 +52,7 @@ nav {
     width: 400px;
 }
 
-.form-container {
+.form-Psetting_container {
     position: absolute;
     top: 0;
     /* height: 100%; */
@@ -85,24 +63,25 @@ nav {
     width: 50%;
 }
 
-.container form {
+.Psetting_container form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px 40px;
     height: 100%;
-    margin-top: -410px;
+	margin-left: -60%;
+	margin-top: 8%;
 }
 
-.container input {
+.Psetting_container input {
     background-color: #eee;
     border: none;
     margin: 15px 0;
     padding: 10px 15px;
     font-size: 13px;
     border-radius: 8px;
-    width: 100%;
+    width: 120%;
     outline: none;
 }
 
@@ -164,7 +143,7 @@ nav {
 
 /* Upload Image */
 
-.card {
+.Psetting_card {
     width: 328px;
     height: 370px;
     background-color: #fff;
@@ -172,7 +151,7 @@ nav {
     border-radius: 15px;
     text-align: center;
     color: #ffffff;
-    margin-left: 500px;
+    margin-left: 120%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -180,12 +159,12 @@ nav {
 	--box-shadow: 0 .0875rem 0.75rem 0rem var(--color-light);
 }
 
-.card h2 {
+.Psetting_card h2 {
     font-weight: 500;
     color: #000;
 }
 
-.card img {
+.Psetting_card img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -193,7 +172,7 @@ nav {
 	margin-bottom: 10px;
 }
 
-.card label {
+.Psetting_card label {
     display: block;
     width: 200px;
     background: #000000;
@@ -219,17 +198,6 @@ span{
 	color: #000000;
 }
 
-.card input {
+.Psetting_card input {
     display: none;
 }
-
-
-/* header bar */
-
-
-/* .logo{
-	width: 300px;
-	/* margin-bottom: -50px; */
-
-
-/* } */
